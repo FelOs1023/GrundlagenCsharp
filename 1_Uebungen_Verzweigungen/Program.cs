@@ -30,12 +30,6 @@ Console.WriteLine("In welcher Einheit ist ihre Temperatur?" +
 Console.Write("Ihre Auswahl: ");
 double Temperatur = double.Parse(Console.ReadLine());
 
-if (Temperatur == 2)
-{
-    Temp = (Temp - 32) * 5 / 9;
-    Console.WriteLine(Temp + "°C");
-}
-
 if (Temperatur == 1)
 {
     Console.WriteLine("In welche Einheit möchten sie umrechnen?" +
@@ -46,14 +40,37 @@ if (Temperatur == 1)
     if (Celsius_Rech == 1)
     {
         Temp = Temp + 273.15;
-        Console.WriteLine(Temp);
+        Console.WriteLine(Temp + "K");
     }
     else if (Celsius_Rech == 2)
     {
         Temp = (Temp * 9 / 5) + 32;
-        Console.WriteLine(Temp);
+        Console.WriteLine(Temp + "°F");
     }
 }
+
+if (Temperatur == 2)
+{
+    //Temp = (Temp - 32) * 5 / 9;
+
+    Console.WriteLine("In welche Einheit möchten sie umrechnen?" +
+    "\n(1)Kelvin zu Celsius" +
+    "\n(2)Kelvin zu Fahrenheit");
+    double Kelvin_Rech = double.Parse(Console.ReadLine());
+
+    if (Kelvin_Rech == 1)
+    {
+        Temp = Temp - 273.15;
+        Console.WriteLine(Temp + "°C");
+    }
+    else if (Kelvin_Rech == 2)
+    {
+        Temp = (Temp - 273.15) * 9/5 + 32;
+        Console.WriteLine(Temp + "°F");
+    }
+}
+
+
 
 
 

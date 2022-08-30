@@ -48,6 +48,10 @@ if (Temperatur == 1)
         Temp = (Temp * 9 / 5) + 32;
         Console.WriteLine("\n" + Temp + "°F");
     }
+    else if (Celsius_Rech >= 3)
+    {
+        Console.WriteLine("Nicht gültige Zahl eingegeben!");
+    }
 }
 
 if (Temperatur == 2)
@@ -70,9 +74,16 @@ if (Temperatur == 2)
         Temp = (Temp - 273.15) * 9/5 + 32;
         Console.WriteLine("\n" + Temp + "°F");
     }
+    else if (Kelvin_Rech >= 3)
+    {
+        Console.WriteLine("Nicht gültige Zahl eingegeben!");
+    }
 }
 
-
+if (Temperatur >= 3)
+{
+    Console.WriteLine("Nicht gültige Zahl eingegeben!");
+}
 
 
 

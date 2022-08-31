@@ -38,12 +38,12 @@ if (Temperatur == 1)
     Console.Write("Ihre Auswahl: ");
     double Celsius_Rech = double.Parse(Console.ReadLine());
 
-    if (Celsius_Rech == 1)
+    if (Celsius_Rech == 1 && Temp > -273.15)
     {
         Temp = Temp + 273.15;
         Console.WriteLine("\n" + Temp + "K");
     }
-    else if (Celsius_Rech == 2)
+    else if (Celsius_Rech == 2 && Temp > -459.67)
     {
         Temp = (Temp * 9 / 5) + 32;
         Console.WriteLine("\n" + Temp + "°F");
@@ -64,12 +64,12 @@ if (Temperatur == 2)
     Console.Write("Ihre Auswahl: ");
     double Kelvin_Rech = double.Parse(Console.ReadLine());
 
-    if (Kelvin_Rech == 1)
+    if (Kelvin_Rech == 1 && Temp >= 0)
     {
         Temp = Temp - 273.15;
         Console.WriteLine("\n" + Temp + "°C");
     }
-    else if (Kelvin_Rech == 2)
+    else if (Kelvin_Rech == 2 && Temp >= 0)
     {
         Temp = (Temp - 273.15) * 9/5 + 32;
         Console.WriteLine("\n" + Temp + "°F");

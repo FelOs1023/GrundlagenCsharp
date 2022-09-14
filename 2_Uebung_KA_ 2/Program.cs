@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Aufgabe 1
+
+Console.WriteLine({ 1,1} "1");
